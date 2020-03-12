@@ -1,0 +1,16 @@
+.flex {
+    display: flex;
+}
+.left {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 400px;
+}
+.middle {
+    display: flex;
+    flex-wrap: wrap;
+}
+.right {
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab1.1</title>
+</head>
+<body>
+    <header>
+        <nav>
+            Home | <a href="https://www.google.com/">Google</a> | <a href="2.html">To Lab1.2</a> |
+        </nav>
+    </header>
+    <aside>
+        <time>23:59</time>
+        Hi! I'm aside</p> 
+        <canvas id="canvas"></canvas>
+        <mark>Choose color:</mark>
+        <p> 
+            <input id='input' list="color">
+            <datalist id="color">
+                <option value="Red"></option>
+                <option value="Green"></option>
+                <option value="Blue"></option>
+            </datalist>
+        </p>   
+        <output id="output"></output>
+        <video width="200" height="160" controls>
+            <source src="https://basicweb.ru/html/primer/123.mp4" type="video/mp4">
+            <track kind="subtitles" src="/video/sub.vtt" srclang="en" label="English"/> 
+        </video>
+    </aside>
+    <main>
+    <article>
+        <br>
+        <audio controls>
+            <source src="https://ib17.hip-hop.ru/upload/music/ib17_r4_Damilola.Karpow_1ee8ea0c88.mp3" type="audio/mpeg">  
+        </audio>  
+        <br>
+        <progress value="50" max="100"></progress>
+        <meter value="50" max="100"></meter>
+        <dialog id="dialog" open>
+                <p>
+                    Only for 1$...
+                <button id="closeDialog">Close</button>
+                </p>
+        </dialog>
+        <p><bdi>שבת</bdi> with bdi</p>
+        <p>שבת without bdi</p>
+        <details>
+            <summary>Spoilers!!!</summary>
+            <embed src="https://media1.giphy.com/media/wHQX24yeMwqZi/giphy.gif?cid=790b7611f6df8aedca2dc6e43c014f0ec96c2a53ffe1efce&rid=giphy.gif" heigh=150 width=150 frameborder="0" >
+            <br>
+            <meter value='50' max='100'></meter>
+        </details>
+        <section>
+            <figure>
+                <img contextmenu="lab1menu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" width='150' heigth='150'>
+                <figcaption>JavaScript</figcaption>
+                <menu type = "context" id = "lab1menu">
+                    <menuitem label = "Java"></menuitem>
+                    <menuitem label = "Script"></menuitem>
+                </menu>
+            </figure>
+            <section>
+                <h5>Picture!</h5>
+                <picture>
+                    <source 
+                        media="(min-width: 650px)"
+                        srcset="https://interactive-examples.mdn.mozilla.net/media/examples/grapefruit-slice-332-332.jpg">  
+                    <source 
+                        media="(min-width: 465px)"
+                        srcset="https://www.smallbizgenius.net/wp-content/uploads/2019/06/smallbizgenius_favicon.png">
+                    <img src= "https://www.smallbizgenius.net/wp-content/uploads/2019/06/smallbizgenius_favicon.png">
+                </picture>
+            </section>
+        </section>
+        <template>
+            <h5>Template</h5>
+        </template>
+    </article>
+    </main>
+    <footer>
+        <hr>
+        FooterFooterFooterFooter<wbr>FooterFooterFooterFooterFooter<wbr>FooterFooterFooterFooterFooter
+        <script>
+            let canvas = document.getElementById("canvas");
+            let ctx = canvas.getContext("2d");
+            ctx.fillStyle = "green";
+            ctx.fillRect(10, 10, 50, 50);
+            document.getElementById('closeDialog').addEventListener('click', function() {
+                document.getElementById('dialog').style.display='none';
+            });
+            document.getElementById('input').addEventListener('change',function(){
+                let color = document.getElementById('input').value;
+                if (color==='Green')
+                      document.getElementById('output').value=`True`;
+                else
+                    document.getElementById('output').value=`False`;
+            });
+            let temp = document.getElementsByTagName("template")[0];
+            let clone = temp.content.cloneNode(true);
+            clone.textContent = "newTemplate";
+            document.body.appendChild(clone);
+        </script>
+        <style>
+            aside {
+                background: #f0f0f0;
+                padding: 10px;
+                width: 200px;
+                float: right;
+            }
+            article {
+                margin-right: 240px;
+                display: block;
+            }
+        </style>
+    </footer>
+</body>
+</html> 

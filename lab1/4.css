@@ -1,0 +1,55 @@
+body
+{
+    font-family: monospace;
+    font-size: 15px;
+    max-width: 900px;
+    margin: auto;
+    align-content: center;
+    background: url(images/back3.jpg);
+}
+.sections
+{ 
+    list-style: none;
+    display: flex;
+    font-size: 150%;
+    margin-left: 110px;
+}
+.sections li
+{
+    border: 1px, solid #ccc;
+    text-decoration: none;
+    padding: 5px;
+    margin-left: 30px;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.columns 
+{
+    column-width: 350px;
+    column-count: 2;
+    column-rule: 1px solid #ccc;
+}
+figure
+{
+    margin: auto;
+}
+figure figcaption
+{
+    border-bottom: 1px solid #ccc; 
+}
+figure img
+{
+    margin-top: 4px;
+}
+h4
+{
+    margin: 0;
+    font-size: 130%;
+}
+h2
+{
+    font: bold fantasy;
+    font-size: 300%; 
+    text-align: center;
+    margin-bottom: 2px;
+}

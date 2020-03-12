@@ -1,0 +1,74 @@
+.grid
+{
+    display: grid;
+    grid-template-rows: [row1-start] 450px [row2-start] 450px [row3-start] 450px [row4-start] 450px [row4-end];
+    grid-template-columns:  [col1-start] 450px [col2-start] 450px [col3-start] 450px [col4-start] 450px [col4-end];
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+}
+#img00
+{
+    grid-column: col1-start;
+    grid-row: row1-start ;
+}   
+#img01
+{
+    grid-column: col2-start;
+    grid-row: row1-start ;
+}
+#img02
+{
+    grid-column: col3-start;
+    grid-row: row1-start ;
+}
+#img03
+{
+    grid-column: col4-start;
+    grid-row: row1-start;
+}
+#img10
+{
+    grid-column: col1-start;
+    grid-row: row2-start ;
+}
+#img11
+{
+    grid-column: col2-start / col4-start;
+    grid-row: row2-start /row4-start;
+}
+#img13  
+{
+    grid-column: col4-start;
+    grid-row: row2-start ;
+}
+#img20
+{
+    grid-column: col1-start;
+    grid-row: row3-start ;
+}
+#img23
+{
+    grid-column: col4-start;
+    grid-row: row3-start ;
+}
+#img30
+{
+    grid-column: col1-start;
+    grid-row: row4-start ;
+}
+#img31
+{
+    grid-column: col2-start;
+    grid-row: row4-start ;
+}
+#img32
+{
+    grid-column: col3-start;
+    grid-row: row4-start ;
+}
+#img33
+{
+    grid-column: col4-start;
+    grid-row: row4-start ;
+}
+
