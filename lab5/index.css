@@ -1,0 +1,17 @@
+.struct {
+    margin: 0 auto;
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+}
+
+.photo {
+    margin:  20px;
+    border: 2px solid black;
+}
+
+#spinner {
+    position: fixed;
+    bottom: 0px;
+    color:red;
+}
